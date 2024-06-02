@@ -1,0 +1,731 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: 978px;
+  width: 100%;
+  background-image: url('./image/hero-img-bg.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .content img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 0 15px 0; 
+}
+
+.award {
+  width: 333px;
+  height: 278px;
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 50%;
+  margin: 0;
+  text-align: left; 
+  padding: 20px; 
+  z-index: 1;
+}
+
+.content h1 {
+  text-align: left;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px; 
+  line-height: 70px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  margin-bottom: 12px;
+}
+
+.content p {
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px; 
+  line-height: 41px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  margin-bottom: 18px;
+}
+
+.womanImage {
+  max-width: 40%; 
+  height: auto;
+  position: absolute;
+  bottom: 16px;
+  left: 420px;
+}
+
+.content-form {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 28px;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  z-index: 1;
+}
+
+.content-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: flex-start;
+  padding-block: 16px;
+}
+
+.content-form form label {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px; 
+  line-height: 24px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+
+.blueText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #009FE8;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: 8px;
+  margin-right: 18px;
+  width: 35px;
+  height: 17px;
+}
+
+.redText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FA020E;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: 8px;
+  width: 35px;
+  height: 17px;
+}
+
+.secondRedText {
+  align-items: center;
+  justify-content: center;
+  background-color: #FA020E;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: 8px;
+  width: 35px;
+  height: 17px;
+}
+
+.endText {
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px; 
+  line-height: 24px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  width: 100%;
+}
+
+.content-form form input,
+.content-form form select,
+.content-form form textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.content-form .formDisplay form button {
+  background: transparent linear-gradient(90deg, #009FE8 0%, #009FE8 100%) 0% 0% no-repeat padding-box;
+  width: 106px;
+  height: 46px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px; 
+  line-height: 24px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.content-form form button:hover {
+  background-color: #0056b3;
+}
+
+.formDisplay {
+  margin-block: 12px;
+}
+
+.formDisplay h2 {
+  text-align: left;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px; 
+  line-height: 22px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+
+.sub-head {
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px; 
+  line-height: 24px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.dual {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.dual-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dual-content input {
+  width: 100%; 
+}
+
+.endLine {
+  display: flex;
+  margin-top: 12px;
+}
+
+.endLine input.checkBox {
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px; 
+}
+
+.endLine p {
+  margin: 0; 
+}
+
+.checkBox {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 0px;
+}
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: transparent linear-gradient(137deg, #0A4AB9 0%, #009FE8 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.headerText {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px; 
+  line-height: 42px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-bottom: 42px;
+  margin-top: 36px;
+}
+
+.middleContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 19px;
+}
+
+.middleContent img {
+  margin-right: 22px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card .headerImage img.smallImage {
+  margin-right: 6px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.endTextContainer {
+  display: flex;
+  flex-direction: row;
+  margin-block: 22px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 16px;
+}
+
+.headerImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerImage h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px; 
+  line-height: 37px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  text-align: left; 
+}
+
+.card p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px; 
+  line-height: 26px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+}
+
+.smallImage {
+  width: 70px;
+  height: 70px;
+}
+
+.textContainer h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px; 
+  line-height: 41px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+}
+
+.textContainer p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px; 
+  line-height: 27px; 
+  font-family: 'Noto Sans JP', sans-serif; 
+}
+
+.footer {
+  background-color: #003366; 
+  color: #fff;
+  padding: 22px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content ul li {
+  display: inline;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    height: auto; 
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 32px; 
+    line-height: 48px;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .womanImage {
+    position: static;
+    max-width: 70%;
+    margin: 20px auto;
+  }
+
+  .content-form {
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 20px;
+    padding-inline: 30px;
+  }
+
+  .secondSection {
+    padding: 20px;
+  }
+
+  .headerText {
+    font-size: 24px; 
+    line-height: 32px; 
+  }
+
+  .middleContent {
+    flex-direction: column;
+  }
+
+  .middleContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card .headerImage img.smallImage {
+    max-width: 70px; 
+  }
+
+  .endTextContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContainer {
+    padding: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 36px; 
+    line-height: 50px;
+  }
+
+  .content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hero .content img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .womanImage {
+    position: static;
+    max-width: 50%;
+    margin: 20px auto;
+  }
+
+  .content-form {
+    width: 80%;
+    margin: 0 auto;
+    padding-block: 20px;
+    padding-inline: 30px;
+  }
+
+  .secondSection {
+    padding: 20px;
+  }
+
+  .headerText {
+    font-size: 28px; 
+    line-height: 36px; 
+  }
+
+  .middleContent {
+    flex-direction: column;
+  }
+
+  .middleContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .card .headerImage img.smallImage {
+    margin-right: 6px;
+    max-width: 80px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+
+  .endTextContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContainer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .hero {
+    flex-direction: row;
+    height: auto;
+    padding: 40px;
+    align-items: center;
+  }
+
+  .content {
+    width: 50%;
+    text-align: left;
+  }
+
+  .hero .content img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .womanImage {
+    position: absolute;
+    max-width: 40%;
+    bottom: -250px;
+    left: 160px;
+  }
+
+  .content-form {
+    width: 40%;
+    margin: 0 auto;
+    padding-block: 20px;
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+
+  .secondSection {
+    padding: 40px;
+  }
+
+  .headerText {
+    font-size: 32px; 
+    line-height: 40px; 
+  }
+
+  .middleContent {
+    flex-direction: column;
+  }
+
+  .middleContent img {
+    width: auto;
+    height: auto;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card .headerImage img.smallImage {
+    max-width: 90px;
+  }
+
+  .headerImage {
+    width: 100%;
+  }
+
+  .endTextContainer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .textContainer {
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
